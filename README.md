@@ -108,5 +108,5 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 <p align="center">
   <br>
-  Made with ❤️ by [Your Name]
+  Made with 🫰🏻🫶🏻 by Muhammad Zuhair Afham Bin Mohd Nasir (P153944)
 </p>
