@@ -1,112 +1,85 @@
 # 🎓 MACHINE LEARNING CLASSIFICATION OF EMPLOYABILITY OUTCOMES AMONG GAMUDA AI ACADEMY GRADUATES IN THE MALAYSIAN TECH SECTOR
 
-
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python&logoColor=white)
 ![Scikit-Learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
 
-> **Machine Learning Classification of Employability Outcomes among Gamuda AI Academy Graduates in the Malaysian Tech Sector.**
-
 ---
 
 ## 🧐 About The Project
 
-This project leverages Machine Learning to analyze and predict the employability of graduates from the **Gamuda AI Academy (GAIA)**. By examining various demographic and academic factors, we aim to identify key drivers of success in the Malaysian tech sector.
+This project analyzes data from the **Gamuda AI Academy (GAIA)** to understand what factors drive employment success in the Malaysian tech sector. We utilize Machine Learning to predict outcomes and analyze socioeconomic impacts.
 
 ### 🎯 Key Objectives
-* **Analyze** historical data of GAIA graduates.
-* **Identify** significant features contributing to employment (e.g., Capstone Scores, Attendance).
-* **Predict** employment success (`Yes/No`) using classification models.
-* **Promote** socioeconomic equity through data-driven insights.
+* **Analyze** participant demographics and academic performance.
+* **Identify** key drivers of employment (e.g., Capstone Scores, Attendance).
+* **Predict** employability using **Logistic Regression** and **Random Forest**.
+* **Evaluate** the program's impact on socioeconomic equity (B40/M40/T20).
 
 ---
 
-## 📊 Dataset Overview
+## 📊 Dataset Features
 
-The dataset contains records of **239 participants** with the following key features:
+The analysis is based on **239 records** containing the following features:
 
 | Feature | Description |
 | :--- | :--- |
-| 📍 `cohort_region` | Region of the cohort (e.g., KL, Sabah) |
-| 🎓 `education_level` | Participant's highest education level |
-| 📈 `capstone_score` | Final score achieved in the capstone project |
+| 📍 `cohort_region` | Location of the cohort (e.g., KL, Sabah) |
+| 🎓 `education_level` | Highest qualification obtained |
 | 📅 `attendance_pct` | Percentage of classes attended |
-| 💼 `group_income` | Socioeconomic income group (B40, M40, T20) |
-| 🎯 **Target** | `employed_success` (1 = Employed, 0 = Unemployed) |
+| 📈 `capstone_score` | Final project assessment score |
+| 💰 `group_income` | Socioeconomic group (B40, M40, T20) |
+| 💼 `employed_success` | **Target Variable** (1 = Employed, 0 = Unemployed) |
 
 ---
 
-## 🛠️ Tech Stack
+## ⚙️ Methodology
 
-* **Core:** Python 3
-* **Data Manipulation:** Pandas, NumPy
-* **Visualization:** Seaborn, Matplotlib
-* **Machine Learning:** Scikit-Learn (Logistic Regression, Random Forest)
-* **Statistics:** SciPy, Statsmodels
-
----
-
-## 🚀 Workflow
-
-1.  **Data Loading & Cleaning**: Handling missing values (e.g., industry data for unemployed graduates) and normalizing string columns.
-2.  **Exploratory Data Analysis (EDA)**: Visualizing employment rates across regions, gender, and income groups.
-3.  **Feature Engineering**: Encoding categorical variables (One-Hot) and scaling numerical features.
-4.  **Model Training**: Implementing `LogisticRegression` and `RandomForestClassifier`.
-5.  **Evaluation**: Using Cross-Validation, Confusion Matrices, and ROC-AUC scores.
+1.  **Data Cleaning:** Handling missing values in industry columns and standardizing text data.
+2.  **EDA (Exploratory Data Analysis):** Visualizing distributions of scores, attendance, and income groups.
+3.  **Preprocessing:** One-Hot Encoding for categorical variables and Standard Scaling for numerical features.
+4.  **Modeling:**
+    * `LogisticRegression` (Baseline)
+    * `RandomForestClassifier` (Ensemble)
+5.  **Evaluation:** Confusion Matrix, ROC-AUC, and Classification Reports.
 
 ---
 
-## 📈 Key Insights
+## 📈 Key Findings
 
-* **Employment Rate:** The overall employment rate in the dataset is approximately **73.2%**.
-* **Top Industries:** Energy, Manufacturing, and Technology.
-* **Impact:** The analysis suggests that GAIA's training effectively neutralizes traditional socioeconomic barriers, providing equitable opportunities across different income groups.
+* **Overall Success:** The program achieved a **73.2%** employment rate.
+* **Top Industries:** Energy (10.9%), Manufacturing (10.3%), and Tech (9.1%).
+* **Equity:** The analysis confirms that the training effectively neutralizes socioeconomic barriers, offering equitable outcomes regardless of income group.
 
 ---
 
 ## 💻 Getting Started
 
 ### Prerequisites
-* Python 3.8+
-* Jupyter Notebook
+* Python 3.x
+* Jupyter Notebook or Google Colab
 
 ### Installation
 
 1.  Clone the repo
     ```sh
-    git clone [https://github.com/your_username/gaia-employability-classification.git](https://github.com/your_username/gaia-employability-classification.git)
+    git clone [https://github.com/your_username/gaia-employability-analysis.git](https://github.com/your_username/gaia-employability-analysis.git)
     ```
-2.  Install dependencies
+2.  Install requirements
     ```sh
     pip install -r requirements.txt
-    ```
-3.  Run the notebook
-    ```sh
-    jupyter notebook
     ```
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1.  Fork the Project
-2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4.  Push to the Branch (`git push origin feature/AmazingFeature`)
-5.  Open a Pull Request
-
----
-
-## 📝 License
-
-Distributed under the MIT License. See `LICENSE` for more information.
+Contributions, issues, and feature requests are welcome!
 
 ---
 
 <p align="center">
   <br>
-  Made with 🫰🏻🫶🏻 by Muhammad Zuhair Afham Bin Mohd Nasir (P153944)
+  Made with 🫶🏻 using Python by Muhammad Zuhair Afham Bin Mohd Nasir (P153944)
 </p>
