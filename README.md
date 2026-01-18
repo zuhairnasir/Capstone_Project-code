@@ -64,7 +64,7 @@ The analysis is based on **239 records** containing the following features:
 
 1.  Clone the repo
     ```sh
-    git clone [https://github.com/your_username/gaia-employability-analysis.git](https://github.com/zuhairnasir/gaia-employability-analysis.git)
+    git clone [https://github.com/zuhairnasir/gaia-employability-analysis.git](https://github.com/zuhairnasir/gaia-employability-analysis.git)
     ```
 2.  Install requirements
     ```sh
